@@ -34,3 +34,82 @@ Aquí se almacenan los **servidores** que has agregado a tus **favoritos**.
 ### ✨ **Recuerda**:  
 - **Haz una copia de seguridad** de tus archivos originales antes de realizar cualquier cambio, por si no te gusta alguna cosa o necesitas recuperarlo.  
 - **Cierra el juego** antes de reemplazar los archivos de configuración para evitar problemas.
+
+---
+
+## 🚀 **Parámetros de lanzamiento recomendados**
+
+Estos se colocan en las opciones de lanzamiento de Steam (Clic derecho sobre Rust > Propiedades > General > Parámetros de lanzamiento):
+
+- **Todos:**
+  ```cmd
+  -effects.maxgibs -1
+  ```
+
+- **No escombros:**
+  ```cmd
+  effects.maxgibs -1
+  ```
+
+---
+
+## 🧾 **Comandos en el juego**
+
+### ✅ Funcionan:
+
+- **Ver armas más pequeñas (+ de FOV 70):**
+  ```cmd
+  graphics.vm_fov_scale false
+  ```
+
+- **Zoom bind FOV 90 a FOV 70:**
+  ```cmd
+  bind mouse3 ~graphics.fov 90;graphics.fov 70
+  ```
+
+- **Ver FPS y ping:**
+  ```cmd
+  global.perf 5
+  ```
+
+- **Cambiar calidad del agua:**
+  ```cmd
+  bind j ~water.quality 0;water.quality 2
+  ```
+
+- **Cambiar calidad de objetos:**
+  ```cmd
+  bind k ~mesh.quality 0;mesh.quality 200
+  ```
+
+- **Remover (Servidor Modificado):**
+  ```cmd
+  bind z chat.say "/remove"
+  ```
+
+- **Aceptar TP (Servidor Modificado):**
+  ```cmd
+  bind x chat.say "/tpa"
+  ```
+
+### ❌ No funcionan:
+
+- **No retroceso tiro a tiro:**
+  ```cmd
+  player.recoilcomp true
+  ```
+
+- **Ver debajo del agua (viejo):**
+  ```cmd
+  bind k ~water.quality +2;water.quality -2
+  ```
+
+- **Ver debajo del agua (nuevo):**
+  ```cmd
+  bind j meta.if_true "water.quality 2";+meta.if_false "water.quality -1
+  ```
+
+- **Saltar más:**
+  ```cmd
+  physics.steps 60
+  ```
