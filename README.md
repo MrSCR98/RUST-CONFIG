@@ -113,3 +113,12 @@ Estos se colocan en las opciones de lanzamiento de Steam (Clic derecho sobre Rus
   ```cmd
   physics.steps 60
   ```
+
+## ➕ **Miras**
+
+- **Base**
+```cmd
+RUST-FceIG-V4T
+```
+
+graphicssettings.shadowcascades "1" :(
