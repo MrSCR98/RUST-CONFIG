@@ -43,7 +43,7 @@ Estos se colocan en las opciones de lanzamiento de Steam (Clic derecho sobre Rus
 
 - **Todos:**
   ```cmd
-  -effects.maxgibs -1
+  -"effects.maxgibs -1" -graphics.shadowmode "1"
   ```
 
 - **No escombros:**
