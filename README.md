@@ -43,12 +43,17 @@ Estos se colocan en las opciones de lanzamiento de Steam (Clic derecho sobre Rus
 
 - **Todos:**
   ```cmd
-  -"effects.maxgibs -1" -graphics.shadowmode "1"
+  -"effects.maxgibs -1" -graphics.shadowmode "1" -gc.incremental_milliseconds "1"
   ```
 
 - **No escombros:**
   ```cmd
   effects.maxgibs -1
+  ```
+
+- **Corrige el retraso al disparar:**
+  ```cmd
+  gc.incremental_milliseconds 1
   ```
 
 ---
