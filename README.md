@@ -127,3 +127,7 @@ RUST-FceIG-V4T
 ```
 
 graphicssettings.shadowcascades "1" :(
+
+graphics.shaderlod "3" :(
+
+COSAS: https://wiki.facepunch.com/rust/
